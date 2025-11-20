@@ -3,159 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI490 @ UMass Amherst</title>
+    <title>Melvin de Medeiros | Portfolio</title>
     <style>
-        :root {
-            --umass-maroon: #881C1C;
-            --umass-maroon-dark: #5E0F0F;
-            --umass-gray: #F2F2F2;
-            --umass-gold: #B3995D;
-            --text-dark: #1F1F1F;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
             margin: 0;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, var(--umass-maroon) 0%, var(--umass-maroon-dark) 100%);
-            color: #fff;
+            padding: 0;
+            color: #333;
         }
-
         header {
-            padding: 3rem 1.5rem 2rem;
             text-align: center;
-            background: rgba(0, 0, 0, 0.15);
-            border-bottom: 4px solid var(--umass-gold);
+            padding: 40px 20px;
         }
-
-        header h1 {
-            margin: 0.25rem 0 0.75rem;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #1a2a6c;
         }
-
-        header p {
-            max-width: 640px;
+        h2 {
+            color: #1a2a6c;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #555;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
             margin: 0 auto;
-            font-size: 1.15rem;
-            line-height: 1.6;
         }
-
-        main {
-            max-width: 960px;
-            margin: -2rem auto 3rem;
-            padding: 0 1.5rem;
+        .about-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
-        .badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 999px;
-            background-color: var(--umass-gold);
-            color: var(--text-dark);
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
+        .about-card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
         }
-
-        .grid {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        .card-grid {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-
         .card {
-            background: #fff;
-            color: var(--text-dark);
-            border-radius: 18px;
-            padding: 1.75rem;
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-            border-top: 6px solid var(--umass-gold);
-        }
-
-        .card h2 {
-            margin-top: 0;
-            color: var(--umass-maroon);
-        }
-
-        .card p {
-            margin-bottom: 0;
-            line-height: 1.6;
-        }
-
-        .cta {
-            margin-top: 2.5rem;
+            background: white;
+            width: 280px;
+            padding: 25px;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
-        .cta a {
+        .button {
             display: inline-block;
-            padding: 0.9rem 2.5rem;
-            border-radius: 999px;
-            background: #fff;
-            color: var(--umass-maroon);
-            font-weight: 700;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #1a2a6c;
+            color: white;
+            border-radius: 6px;
             text-decoration: none;
-            letter-spacing: 0.02em;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .cta a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem 3rem;
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 0.95rem;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2.1rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="badge">University of Massachusetts Amherst</div>
-        <h1>AI490: AI in Economics at UMass Amherst</h1>
-        <p>Welcome to Melvin De Medeiros' course hub, celebrating the pioneering spirit of the Minutemen and the bold maroon and white of UMass Amherst.</p>
-    </header>
 
-    <main>
-        <section class="grid">
-            <article class="card">
-                <h2>Coursework Showcase</h2>
-                <p>This site will highlight projects, assignments, and reflections developed throughout AI490. Expect hands-on demos, code walkthroughs, and thoughtful writeups.</p>
-            </article>
-            <article class="card">
-                <h2>Research Interests</h2>
-                <p>Diving into machine learning, human-centered AI, and data-driven storytelling with a focus on impactful applications tied to the UMass innovation community.</p>
-            </article>
-            <article class="card">
-                <h2>About Melvin</h2>
-                <p>Melvin De Medeiros is pursuing new frontiers in intelligent systems, drawing inspiration from UMass Amherst's collaborative culture and history of excellence.</p>
-            </article>
-        </section>
+<header>
+    <h1>Melvin de Medeiros</h1>
+    <div class="subtitle">Undergraduate Student, Managerial Economics | University of Massachusetts Amherst</div>
+</header>
 
-        <div class="cta">
-            <a href="#">Explore the Journey</a>
+<div class="container">
+    <div class="about-card">
+        <img src="profile.jpg" alt="Profile Picture (Placeholder)">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I'm a Managerial Economics student at UMass Amherst with a strong interest 
+                in artificial intelligence, economics, and data-driven problem-solving.
+            </p>
+            <p>
+                I focus on applying emerging AI tools to finance, markets, and analytical 
+                decision-making. This portfolio highlights my academic work, skills, and projects.
+            </p>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        Rooted in UMass Amherst tradition &mdash; Go UMass! &copy; 2024
-    </footer>
+    <div class="card-grid">
+        <a href="resume.pdf">
+            <div class="card">
+                <h3>Resume</h3>
+                <p>View my professional background and experience.</p>
+                <div class="button">View Resume</div>
+            </div>
+        </a>
+
+        <a href="project.html">
+            <div class="card">
+                <h3>Projects</h3>
+                <p>Explore my AI class project and academic work.</p>
+                <div class="button">View Projects</div>
+            </div>
+        </a>
+    </div>
+</div>
+
 </body>
 </html>
